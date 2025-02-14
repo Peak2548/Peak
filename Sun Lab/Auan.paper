@@ -1,0 +1,10 @@
+main
+
+static hanoi(int n, char source, char des, char aux) {
+    if (n == 1) {
+        print (Move disk 1 from source to des)
+    }
+    hanoi(n, source, aux, des);
+    print ("Move disk n from source to des)
+    hanoi(n, aux, source aux)
+}

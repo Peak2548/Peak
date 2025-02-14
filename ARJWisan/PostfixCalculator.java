@@ -3,7 +3,7 @@ import java.util.Stack;
 
 public class PostfixCalculator {
     Stack<Double> stack;
-    public ARJWisan2() {
+    public PostfixCalculator() {
         stack = new Stack<>();
     }
     public void calPostfix(String postfix) {
