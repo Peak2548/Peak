@@ -12,9 +12,8 @@ public class Basket {
     }
     public void showItemsInBasket() {
         System.out.println("This basket contains");
-        Catalog catalog = new Catalog();
         for (LineItem entry : items) {
-            System.out.println(entry.getQuantity() + " of " + entry.getProduct().getters() + " @= " + entry.getBuyPrice());
+            System.out.println(entry.getQuantity() + " of " + entry.getProduct().getters() + " @= " + entry.getBuyPrice() * entry.getQuantity());
         }
     }
     public void printInvoice() {
@@ -26,9 +25,11 @@ public class Basket {
             System.out.println(entry.getProduct().getters() + " x " + entry.getQuantity() + " " + sumProduct);
             total += sumProduct;
         }
-        System.out.println("Total is " + total);
+        System.out.println("Total is " + total + "*****");
     }
-    private void loopLineItem() {
-
-    }
+    // private void loopLineItem() {
+    //     for (LineItem entry : items) {
+            
+    //     }
+    // }
 }

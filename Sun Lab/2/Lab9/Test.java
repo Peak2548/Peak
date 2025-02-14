@@ -1,7 +1,9 @@
 public class Test {
     public static void main(String[] args) {
-        // demo1();
+        demo1();
         demo2();
+        demo3();
+        demo4();.
     }
 
     static void demo1() {
@@ -31,5 +33,33 @@ public class Test {
 
         b.showItemsInBasket();
         b.printInvoice();
+    }
+    static void demo3() {
+        Shop csShop = new Shop("CS");
+        Basket b1 = csShop.newCustomerArrives();
+        String picked;
+        int quantity;
+        picked = "mama"; quantity = 1;
+        b1.putInBasket(new LineItem(csShop.getProduct(picked), quantity, csShop.getPrice(picked)));
+        picked = "lactasoy"; quantity = 2;
+        b1.putInBasket(new LineItem(csShop.getProduct(picked), quantity, csShop.getPrice(picked)));
+        b1.showItemsInBasket();
+        csShop.checkOut(b1);
+
+        Basket b2 = csShop.newCustomerArrives();
+        picked = "mix veggies"; quantity = 3;
+        b2.putInBasket(new LineItem(csShop.getProduct(picked), quantity, csShop.getPrice(picked)));
+        picked = "korean"; quantity = 4;
+        b2.putInBasket(new LineItem(csShop.getProduct(picked), quantity, csShop.getPrice(picked)));
+        b2.showItemsInBasket();
+        csShop.checkOut(b2);
+        
+        // csShop.dailySalesReport();
+    }
+    static void demo4() {
+        Shop csShop = new Shop("CS");
+        Basket b1 = csShop.newCustomerArrives();
+        String picked = "mama";
+        csShop.checkOut(b1,picked);
     }
 }
