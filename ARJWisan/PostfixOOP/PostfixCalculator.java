@@ -1,4 +1,4 @@
-package ARJWisan;
+package ARJWisan.PostfixOOP;
 import java.util.Stack;
 
 public class PostfixCalculator {
