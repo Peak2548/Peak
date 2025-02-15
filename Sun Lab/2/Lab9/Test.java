@@ -3,7 +3,7 @@ public class Test {
         demo1();
         demo2();
         demo3();
-        demo4();.
+        demo4();
     }
 
     static void demo1() {
