@@ -4,7 +4,7 @@ import java.util.Stack;
 public class ARJWisan1 {
     public static void main(String[] args) {
         binomial(5); System.out.println();
-        infixToPostfix("2*4-(7+14)/2");
+        infixToPostfix("52+28*-");
     }
 
     static void binomial(int n) {

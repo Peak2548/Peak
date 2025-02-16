@@ -1,4 +1,3 @@
-package ARJWisan.PostfixOOP;
 import java.util.Stack;
 
 public class PostfixCalculator {
@@ -24,6 +23,6 @@ public class PostfixCalculator {
                 }
             }
         }
-        System.out.println("Result: " + stack.pop());
+        System.out.println("Evaluated Result: " + stack.pop());
     }
 }
