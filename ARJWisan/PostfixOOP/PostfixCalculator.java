@@ -1,7 +1,8 @@
 import java.util.Stack;
 
 public class PostfixCalculator {
-    Stack<Double> stack;
+    private Stack<Double> stack;
+    
     public PostfixCalculator() {
         stack = new Stack<>();
     }
